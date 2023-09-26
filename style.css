@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  
+font-family: 'Poppins', sans-serif;
+}
+body{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    height: 100vh;
+    overflow: scroll;
+    padding: 20px;
+}
+
+.alertbox{
+background: red;
+color: white;
+border-radius: 4rem;
+display: none;
+
+}
+
+
+.weatherapp{
+    background: linear-gradient(145deg, rgba(72, 186, 232, 0.686),rgba(23, 181, 238, 0.572));
+    max-width:25rem;
+    width: 97%;
+    border-radius:2rem ;
+    margin: 10px auto;
+}
+.weatherapp  form .input{
+    border:transparent;
+    outline: none;
+    border-radius: 4rem;
+    font-size: 1.2rem;
+    padding: 0.2em 2rem;
+    /* flex-grow: 1; */
+}
+.weatherapp form{
+    gap: 1rem;
+}
+.weatherapp form button{
+    height: 2.6rem;
+    width: 2.6rem;
+    padding: 0.5em;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    border: none;
+
+}
+.weatherapp form button img{
+    width: 1.3rem;
+}
+.air{
+    gap: 1rem;
+}
+
+
+.humidity img,.speed img{
+    height: 2rem;
+} 

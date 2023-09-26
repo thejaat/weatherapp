@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootsrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- main css -->
+    <link rel="stylesheet" href="style.css">
+    <title>Weather</title>
+</head>
+
+<body>
+
+    <div class="alerts d-flex justify-content-center ">
+        <span class="alertbox text-center p-1" id="alertBox">
+            please enter correct city name
+        </span>
+    </div>
+   
+
+        <div class="weatherapp p-3 mt-5">
+            <!-- input -->
+            <div class="row">
+                <div class="col">
+                    <form action="" class="d-flex align-items-center justify-content-center mt-3">
+                        <input type="text" class="text-secondary w-75 input" placeholder="enter city name..." maxlength="35" spellcheck="false">
+                        <button> <img src="./img/search.png" alt="" class="bg-light inputimg inputbtn"> 
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <!-- sun -->
+            <div class="row">
+                <div class="col text-center">
+                        <img src="./img/clear.png" alt="" id="weatherimg">
+                </div>
+            </div>
+            <!-- temp and city -->
+            <div class="row">
+                <div class="col text-center">
+                    <h1 class="h1 fw-bold temp">22°c</h1>
+                    <h1 class="fs-3 city">Bengaluru</h1>
+                </div>
+            </div>
+            <!-- air -->
+            <div class="row mt-3">
+                <div class="col">
+                    <div class="air d-flex justify-content-center">
+                        <div class="humidity d-flex">
+                            <img src="./img/humidity.png" alt="">
+                            <div class="airtextbox ms-3">
+                                <p class="h3 text-light humidityper">53 %</p>
+                            <p class="h6 text-light">Humidity</p>
+                            </div>
+                            
+                        </div>
+                        <div class="speed d-flex">
+                            <img src="./img/wind.png" alt="">
+                            <div class="airtextbox ms-3">
+                                <p class="h3 text-light airSpeed">5.6 km/h</p>
+                                <p class="h6 text-light">Wind Speed</p>
+                            </div>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
